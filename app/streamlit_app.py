@@ -105,8 +105,8 @@ def empty_state():
     T.header("No cattle yet", "Import your yard's data to see risk, treatment options and the plan.")
     with st.container(key="feature_empty"):
         st.html('<p class="pp-h" style="color:#fff">Start by importing data</p><p style="color:#DCE8E0;max-width:70ch">Upload a cattle file (one row per animal, '
-                'with its lot), and optionally health records and a SenseHub report, under Lot management, Add or import data. Demo files are there to '
-                'download. You can also create a lot by hand.</p>')
+                'with its lot), and optionally health records and a SenseHub report, under Lot management, Add or import data. '
+                'You can also create a lot by hand.</p>')
         st.button("Add or import data", key="empty_add", on_click=go, kwargs=dict(section="lots", sub="add"))
 
 

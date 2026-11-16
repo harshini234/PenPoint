@@ -1,5 +1,21 @@
 # Data dictionary
 
+## Demo upload files (`demo_data/`)
+
+**cattle.csv** (one row per animal): animal_id, eid, lot_id, pen, arrival_date, sex, arrival_weight_lb, haul_hours,
+preconditioning (VAC45, VAC34, VAC24 or none), vaccinated_before_arrival (yes or no), buyer_risk_call (high or low),
+bought_through, origin_state, metaphylaxis_on_arrival, pen_area_m2, bunk_m.
+
+**health_records.csv**: animal_id, date, event (BRD treatment, Retreatment or Death), drug, product, drug_class, dose,
+route, withdrawal_days, rectal_temp_c, notes, given_by.
+
+**sensehub_alerts.csv**: Animal ID, Group, Alert Date, Alert Time, Reason, Health Index.
+
+**Outcome definition:** a lot is high risk if 15% or more of its cattle are treated for BRD at least once in their first 45 days.
+
+## Simulation files (`data/demo/`, used to train the risk model)
+
+
 All demo data are **synthetic and fictional** (scripts/generate_data.py). Field definitions live in `src/brd/schema.py`; this file is generated from it by `scripts/make_data_dictionary.py`.
 
 ## Data tiers
