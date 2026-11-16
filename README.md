@@ -1,3 +1,35 @@
+# PenPoint: BRD Decision Aid
+
+**Live dashboard:** https://penpoint-brd.streamlit.app/  (free, no paid access)
+**Repository:** https://github.com/harshini234/PenPoint
+
+## Use the live dashboard
+1. Open the link and click **Open PenPoint**.
+2. Sign in: any email and password work (or leave them blank) and click **Sign in**.
+3. If no lots appear, go to **Lot management → Add or import data** and upload the three files in `demo_data/`:
+   `cattle.csv` (required), `health_records.csv`, `sensehub_alerts.csv`. Click **Import**.
+4. Explore **Herd status → Risk overview**, then **Management options → Treatment options**.
+
+The free host may sleep or reset after inactivity. If the data are gone, upload the demo files again.
+
+## Run locally
+    python3 -m venv .venv
+    source .venv/bin/activate          # Windows: .venv\Scripts\activate
+    python -m pip install -r requirements.txt
+    python -m streamlit run app/streamlit_app.py
+    python scripts/import_demo.py      # optional: loads the demo files without the browser
+
+Open http://localhost:8501. Requires Python 3.10 or newer.
+
+## Demo data columns
+- **cattle.csv:** animal_id, eid, lot_id, pen, arrival_date, sex, arrival_weight_lb, haul_hours, preconditioning (VAC45/VAC34/VAC24/none),
+  vaccinated_before_arrival (yes/no), buyer_risk_call (high/low), bought_through, origin_state, metaphylaxis_on_arrival, pen_area_m2, bunk_m
+- **health_records.csv:** animal_id, date, event (BRD treatment / Retreatment / Death), drug, product, drug_class, dose, route,
+  withdrawal_days, rectal_temp_c, notes, given_by
+- **sensehub_alerts.csv:** Animal ID, Group, Alert Date, Alert Time, Reason, Health Index
+
+All data are synthetic. Regenerate with `python scripts/make_demo_data.py`.
+
 # PenPoint
 
 Cattle analytics and BRD decision management: a decision aid for bovine respiratory disease (BRD) in the first 45 days after feedlot arrival.
