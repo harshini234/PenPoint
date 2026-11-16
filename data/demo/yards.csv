@@ -1,0 +1,5 @@
+yard_id,name,region,profile,one_time_capacity_head,riders,rider_hours_per_day,hospital_pen_head,chute_hours_per_day
+A,Yard A - Panhandle receiving yard,"Texas Panhandle (near Hereford, TX)","Light sale-barn calves, long hauls from the Southeast; highest risk mix",40000,6,7,40,6
+B,Yard B - Panhandle mixed yard,"Texas Panhandle (near Amarillo, TX)",Mixed sale-barn and backgrounded cattle; receives Mexico-origin feeders via NM ports,30000,5,7,35,6
+C,Yard C - SW Kansas yearling yard,"Southwest Kansas (near Garden City, KS)","Heavier yearlings, more ranch-direct and preconditioned cattle; lowest risk mix",35000,5,7,30,6
+D,Yard D - W Kansas small yard,"Western Kansas (near Scott City, KS)","Small yard, mixed cattle, tight hospital-pen and labor capacity (binding constraint demo)",12000,2,7,6,4

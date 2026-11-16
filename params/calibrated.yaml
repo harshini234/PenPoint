@@ -1,0 +1,27 @@
+note: Written by scripts/calibrate.py - do not edit by hand.
+date: '2026-11-15'
+n_lots: 4000
+seed: 20261114
+loss: 0.010224510461377859
+values:
+  logodds_fall: 0.847
+  lot_intercept: -4.3573
+  lot_random_sd: 0.9507
+  human_call_noise_sd: 2.027
+  human_call_threshold: -3.1956
+achieved:
+  prev_high_lots: 0.1118
+  mean_morbidity: 0.0575
+  mean_morbidity_high: 0.2439
+  mean_morbidity_low: 0.0341
+  human_sensitivity: 0.8608
+  human_specificity: 0.5955
+  share_called_high: 0.4988
+  fall_incidence: 0.0838
+  mean_lot_size: 107.4858
+targets:
+  prev_high_lots: 0.1085
+  mean_morbidity: 0.063
+  human_sensitivity: 0.8375
+  human_specificity: 0.5979
+  fall_incidence: 0.0865

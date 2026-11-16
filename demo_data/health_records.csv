@@ -1,0 +1,133 @@
+animal_id,date,event,drug,product,drug_class,dose,route,withdrawal_days,rectal_temp_c,notes,given_by
+A1007,2026-10-25,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1034,2026-10-25,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1062,2026-10-26,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1104,2026-10-27,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.0,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1164,2026-10-27,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1059,2026-10-28,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1084,2026-10-28,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1109,2026-10-28,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,39.9,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1127,2026-10-28,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1156,2026-10-28,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1034,2026-10-29,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.1,Not improving after first treatment,J. Ortiz
+A1073,2026-10-29,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1132,2026-10-29,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1132,2026-10-29,Death,,,,,,,,"Died, BRD suspected (necropsy pending)",J. Ortiz
+A1141,2026-10-29,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1057,2026-10-30,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.0,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1109,2026-10-30,Death,,,,,,,,"Died, BRD suspected (necropsy pending)",M. Reyes
+A1321,2026-10-30,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1139,2026-10-31,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1318,2026-10-31,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1329,2026-10-31,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1350,2026-10-31,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1055,2026-11-01,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,41.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1064,2026-11-01,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1065,2026-11-01,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.7,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1067,2026-11-01,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1127,2026-11-01,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.3,Not improving after first treatment,T. Banks
+A1390,2026-11-01,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1094,2026-11-02,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1375,2026-11-02,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1652,2026-11-02,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1019,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1075,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1125,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1250,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1284,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1314,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,41.0,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1343,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1485,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1529,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1650,2026-11-03,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1039,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1080,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1122,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1129,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1137,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,39.8,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1157,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1262,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1345,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,39.5,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1371,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1424,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1592,2026-11-04,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1037,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1096,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1111,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1129,2026-11-05,Death,,,,,,,,"Died, BRD suspected (necropsy pending)",T. Banks
+A1145,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.7,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1253,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1288,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1316,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1347,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1567,2026-11-05,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.0,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1065,2026-11-06,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.2,Not improving after first treatment,J. Ortiz
+A1074,2026-11-06,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1097,2026-11-06,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.7,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1181,2026-11-06,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1314,2026-11-06,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.4,Not improving after first treatment,M. Reyes
+A1386,2026-11-06,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1395,2026-11-06,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1650,2026-11-06,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.5,Not improving after first treatment,J. Ortiz
+A1653,2026-11-06,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.7,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1031,2026-11-07,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.7,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1089,2026-11-07,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,41.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1342,2026-11-07,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1468,2026-11-07,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1624,2026-11-07,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1679,2026-11-07,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1017,2026-11-08,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1070,2026-11-08,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1248,2026-11-08,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1463,2026-11-08,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1529,2026-11-08,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,39.7,Not improving after first treatment,T. Banks
+A1549,2026-11-08,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1951,2026-11-08,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,39.8,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1048,2026-11-09,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,41.4,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1133,2026-11-09,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1157,2026-11-09,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.0,Not improving after first treatment,T. Banks
+A1234,2026-11-09,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1344,2026-11-09,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1424,2026-11-09,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.2,Not improving after first treatment,J. Ortiz
+A1498,2026-11-09,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1609,2026-11-09,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1814,2026-11-09,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1003,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1045,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1097,2026-11-10,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,39.9,Not improving after first treatment,T. Banks
+A1111,2026-11-10,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.4,Not improving after first treatment,T. Banks
+A1114,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.0,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1162,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1184,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1311,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1368,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1637,2026-11-10,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1031,2026-11-11,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,39.9,Not improving after first treatment,T. Banks
+A1042,2026-11-11,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1046,2026-11-11,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1130,2026-11-11,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,39.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1362,2026-11-11,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1527,2026-11-11,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1971,2026-11-11,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.6,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1048,2026-11-12,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.2,Not improving after first treatment,T. Banks
+A1126,2026-11-12,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1381,2026-11-12,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,39.9,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1679,2026-11-12,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.0,Not improving after first treatment,T. Banks
+A1001,2026-11-13,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.3,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1070,2026-11-13,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,39.8,Not improving after first treatment,J. Ortiz
+A1080,2026-11-13,Death,,,,,,,,"Died, BRD suspected (necropsy pending)",M. Reyes
+A1094,2026-11-13,Death,,,,,,,,"Died, BRD suspected (necropsy pending)",T. Banks
+A1209,2026-11-13,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.1,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1217,2026-11-13,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",T. Banks
+A1248,2026-11-13,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.0,Not improving after first treatment,T. Banks
+A1308,2026-11-13,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.2,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1463,2026-11-13,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,39.8,Not improving after first treatment,T. Banks
+A1003,2026-11-14,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,39.4,Not improving after first treatment,T. Banks
+A1006,2026-11-14,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.4,"Pulled for BRD: depressed, nasal discharge",M. Reyes
+A1114,2026-11-14,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.8,Not improving after first treatment,M. Reyes
+A1150,2026-11-14,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.8,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1330,2026-11-14,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.5,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1503,2026-11-14,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,41.2,"Pulled for BRD: depressed, nasal discharge",J. Ortiz
+A1503,2026-11-14,Death,,,,,,,,"Died, BRD suspected (necropsy pending)",T. Banks
+A1971,2026-11-14,Retreatment,enrofloxacin,Baytril 100,Fluoroquinolone antibiotic,Per label,SC,28.0,40.0,Not improving after first treatment,J. Ortiz
+A2107,2026-11-14,BRD treatment,florfenicol,Nuflor,Phenicol antibiotic,Per label,IM,28.0,40.9,"Pulled for BRD: depressed, nasal discharge",T. Banks

@@ -1,0 +1,1153 @@
+# =============================================================================
+# BRD Decision Aid — PARAMETER LEDGER (single source of truth)
+# =============================================================================
+# Every number the generator, model, simulator or dashboard uses lives here.
+#
+# tag:
+#   Obs        = observed / reported in the cited source (copy it exactly)
+#   Est        = estimated by us from cited sources (show the arithmetic in notes)
+#   Assume     = our assumption; justify in notes; must be shown as such in the UI
+#   Calibrated = fitted by scripts/calibrate.py so the generator reproduces Obs targets
+#
+# verified: set to true ONLY after a teammate opens the source and confirms the
+#           value AND the location (page / table). Add your initials in verified_by.
+#
+# location: "p5" = page in the PDF; "abstract" = only the abstract has been read
+#           (pull full text before final submission); "secondary" = the number is
+#           cited inside another paper — confirm against the primary source.
+# =============================================================================
+
+meta:
+  version: 0.1.0
+  last_edited: 2026-11-14
+  currency: USD
+  horizon_days: 45
+
+sources:
+  rojas2022:
+    cite: "Rojas HA, White BJ, Amrine DE, Larson RL. Predicting BRD Risk in Feedlot Cattle in the First 45 Days Post Arrival. Pathogens 2022;11:442."
+    link: https://doi.org/10.3390/pathogens11040442
+    kind: peer-reviewed
+    in_organizer_pack: true
+  weber2024:
+    cite: "Weber KMD, Schroeder TC, Renter DG, Pendell DL, Tonsor GT. Evaluation of BRD Morbidity in the Feedlot and its Effect on Net Return Distributions. AAEA poster, 2024."
+    link: "organizer pack (Evaluation of BRD on Net Return.pdf)"
+    kind: conference-poster
+    in_organizer_pack: true
+  adekunle2026epi:
+    cite: "Adekunle A, Kaniyamattam K. BRD: Epidemiological Drivers, Transmission Dynamics, and Economic Implications. Agriculture 2026;16:311."
+    link: https://doi.org/10.3390/agriculture16030311
+    kind: review
+    in_organizer_pack: true
+  adekunle2026rf:
+    cite: "Adekunle A, et al. Mapping Variability in BRD Risk Factors in Beef Production Systems: A Scoping Review. Animals 2026;16:1726."
+    link: https://doi.org/10.3390/ani16111726
+    kind: scoping-review
+    in_organizer_pack: true
+  nahms2017:
+    cite: "USDA APHIS NAHMS. Antimicrobial Use and Stewardship on U.S. Feedlots, 2017 (May 2019)."
+    link: "organizer pack (US Antimicrobial Use.pdf)"
+    kind: government-report
+    in_organizer_pack: true
+  horton2023:
+    cite: "Horton LM, Depenbusch BE, et al. Comprehensive Outcomes Affected by Antimicrobial Metaphylaxis of Feedlot Calves at Medium-Risk for BRD from a Randomized Controlled Trial. Vet Sci 2023;10:67."
+    link: https://doi.org/10.3390/vetsci10020067
+    kind: RCT
+  baptiste2017:
+    cite: "Baptiste KE, Kyvsgaard NC. Do antimicrobial mass medications work? Pathog Dis 2017."
+    link: https://doi.org/10.1093/femspd/ftx083
+    kind: meta-analysis
+  oconnor2019abx:
+    cite: "O'Connor AM, et al. Network meta-analysis of injectable antibiotic options for BRD control in the first 45 days. Anim Health Res Rev 2019;20:163-181."
+    link: https://doi.org/10.1017/S1466252320000031
+    kind: network-meta-analysis
+  oconnor2019vax:
+    cite: "O'Connor AM, et al. Network meta-analysis of vaccines at or near feedlot arrival for BRD. Anim Health Res Rev 2019;20:143-162."
+    link: https://doi.org/10.1017/S1466252319000288
+    kind: network-meta-analysis
+  mijar2023:
+    cite: "Mijar S, et al. Impacts of commingling preconditioned and auction-derived beef calves on BRD. Front Vet Sci 2023."
+    link: https://doi.org/10.3389/fvets.2023.1137078
+    kind: field-trial
+  werid2026:
+    cite: "Werid GM, et al. Determinants of mortality from BRD in Australian feedlot cattle: A survival analysis. Prev Vet Med 2026;255:106952."
+    link: https://doi.org/10.1016/j.prevetmed.2026.106952
+    kind: cohort
+  wisnieski2021:
+    cite: "Wisnieski LC, Amrine DE, et al. Weather conditions associated with death attributed to BRDC in high-risk auction-sourced calves. AJVR 2021;82:644."
+    link: https://doi.org/10.2460/ajvr.82.8.644
+    kind: cohort
+  cernicchiaro2011:
+    cite: "Cernicchiaro N, Renter DG, et al. Associations between weather conditions during the first 45 days after feedlot arrival and daily respiratory disease risks. J Anim Sci 2012."
+    link: https://doi.org/10.2527/jas.2011-4657
+    kind: cohort
+  babcock2010:
+    cite: "Babcock AH, Renter DG, White BJ. Predicting cumulative risk of BRDC using feedlot arrival data and daily morbidity and mortality counts. AABP Proc 2010."
+    link: https://doi.org/10.21423/aabppro20104141
+    kind: conference-proceedings
+  heinen2022:
+    cite: "Heinen L, Lancaster PA, et al. Predictive models of total morbidity from cohort-level feed delivery data in the first 15 days on feed. Transl Anim Sci 2022."
+    link: https://doi.org/10.1093/tas/txac121
+    kind: modeling
+  wottlin2021:
+    cite: "Wottlin LR, Carstens GE, et al. SPC procedures to monitor physical behavior for preclinical BRD detection. Livest Sci 2021;248:104488."
+    link: https://doi.org/10.1016/j.livsci.2021.104488
+    kind: observational
+  pillen2016:
+    cite: "Pillen JL, Pinedo PJ, et al. Alteration of activity variables relative to clinical diagnosis of BRD. Bovine Practitioner 2016;50(1)."
+    link: https://doi.org/10.21423/bovine-vol50no1p1-8
+    kind: observational
+  toaff2016:
+    cite: "Toaff-Rosenstein RL, Gershwin LJ, Tucker CB. Fever, feeding, and grooming behavior around peak clinical signs in BRD. J Anim Sci 2016."
+    link: https://doi.org/10.2527/jas.2016-0346
+    kind: challenge-study
+  wolfger2014cost:
+    cite: "Wolfger B, Manns B, et al. Cost implications of an RFID feeding system for early detection of BRD. Prev Vet Med 2015;118:285-292."
+    link: https://doi.org/10.1016/j.prevetmed.2014.12.001
+    kind: economic-model
+  theurer2015:
+    cite: "Theurer ME, White BJ, et al. A stochastic model to determine the economic value of changing diagnostic test characteristics for BRD. J Anim Sci 2015."
+    link: https://doi.org/10.2527/jas.2014-8487
+    kind: economic-model
+  blakebrough2020:
+    cite: "Blakebrough-Hall C, McMeniman JP, Gonzalez LA. Economic effects of BRD on performance, carcass traits and economic outcomes. J Anim Sci 2020."
+    link: https://doi.org/10.1093/jas/skaa005
+    kind: cohort
+  horton2025:
+    cite: "Horton V, Hanthorn CJ, et al. Understanding metaphylaxis practices for cattle at uncertain risk for BRD: survey of veterinarians and feedlot managers. Transl Anim Sci 2025."
+    link: https://doi.org/10.1093/tas/txaf165
+    kind: survey
+  deathloss2023:
+    cite: "Feedlot death loss structural change, Kansas Feedlot Performance and Feed Cost Summary 1992-2017. Front Vet Sci 2023."
+    link: https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2023.1087080/full
+    kind: time-series
+  peel2023:
+    cite: "Peel DS. Feedlot Trends in Management and Productivity. OSU Cow-Calf Corner, Dec 4 2023."
+    link: https://extension.okstate.edu/programs/beef-extension/cow-calf-corner-the-newsletter-archives/2023/december-4-2023
+    kind: extension
+  nahms2011:
+    cite: "Summary of BRD data from the 2011 NAHMS feedlot and dairy heifer studies. Anim Health Res Rev 2014."
+    link: "find on cambridge.org (DOI to confirm)"
+    kind: government-survey-summary
+  fda2024:
+    cite: "FDA CVM. 2024 Summary Report on Antimicrobials Sold or Distributed for Use in Food-Producing Animals."
+    link: https://www.fda.gov/animal-veterinary/antimicrobial-resistance/2024-summary-report-antimicrobials-sold-or-distributed-use-food-producing-animals
+    kind: government-report
+  beefmag2026:
+    cite: "Greiman A. Cattle futures rally on bullish Cattle on Feed report. Beef Magazine, Oct 27 2026."
+    link: https://www.beefmagazine.com/market-news/cattle-futures-rally-on-bullish-cattle-on-feed-report
+    kind: news (confirm on CME)
+  sensehub_trial:
+    cite: "Merck Animal Health. SenseHub Feedlot closeout comparison vs pen riding (data on file / technical bulletin)."
+    link: https://www.merck-animal-health.ca/product/sensehub-feedlot
+    kind: manufacturer-data
+  sensehub_labor:
+    cite: "Nickell J. Improved detection of sick cattle with SenseHub Feedlot ear tag technology. Merck Animal Health."
+    link: https://www.merck-animal-health-usa.com/species/cattle/cattle-insights/beef/cattle-health-monitoring-ear-tag
+    kind: manufacturer-data
+  sensehub_price:
+    cite: "SenseHub Tags Are Game Changers in Feedlot Management. Drovers."
+    link: https://www.drovers.com/news/beef-production/sensehub-tags-are-game-changers-feedlot-management
+    kind: trade-press
+  nass_cof:
+    cite: "USDA NASS Cattle on Feed (monthly), placements by weight group by state."
+    link: https://esmis.nal.usda.gov/sites/default/release-files/795656/cofd1125.pdf
+    kind: government-data
+  team:
+    cite: "Team assumption — justify in notes; shown as Assume in dashboard."
+    link: ""
+    kind: assumption
+
+parameters:
+
+# ---------------------------------------------------------------- calibration targets
+- id: target_prev_high_lots
+  group: calibration_target
+  description: Share of lots with >=15% BRD morbidity in first 45 DOF
+  value: 0.1085
+  unit: proportion
+  tag: Obs
+  source: rojas2022
+  location: p2 (Results 2.1)
+  used_in: [generator_validation]
+  verified: false
+- id: target_mean_morbidity
+  group: calibration_target
+  description: Mean 45-DOF BRD morbidity across all lots
+  value: 0.0630
+  unit: proportion
+  tag: Obs
+  source: rojas2022
+  location: p2
+  used_in: [generator_validation]
+  verified: false
+- id: target_mean_morbidity_high
+  group: calibration_target
+  description: Mean 45-DOF morbidity in high-risk (>=15%) lots
+  value: 0.2707
+  unit: proportion
+  tag: Obs
+  source: rojas2022
+  location: p2
+  used_in: [generator_validation]
+  verified: false
+- id: target_mean_morbidity_low
+  group: calibration_target
+  description: Mean 45-DOF morbidity in low-risk (<15%) lots
+  value: 0.0377
+  unit: proportion
+  tag: Obs
+  source: rojas2022
+  location: p2
+  used_in: [generator_validation]
+  verified: false
+- id: target_mean_lot_size
+  group: calibration_target
+  description: Average cohort size (188,118 head / 1,733 lots)
+  value: 109
+  unit: head
+  tag: Obs
+  source: rojas2022
+  location: p10-11 (Table 3)
+  used_in: [generator]
+  verified: false
+- id: high_risk_cutoff
+  group: definition
+  description: Lot is 'high risk' if 45-DOF BRD morbidity >= this cutoff
+  value: 0.15
+  unit: proportion
+  tag: Obs
+  source: rojas2022
+  location: p7 (Methods 4.2)
+  used_in: [generator_validation, risk_model]
+  verified: false
+
+# ---------------------------------------------------------------- current practice (baseline)
+- id: human_sensitivity
+  group: current_practice
+  description: Sensitivity of human (buyer/manager) high-risk call vs truth
+  value: 0.8375
+  unit: proportion
+  tag: Obs
+  source: rojas2022
+  location: p3 (2.3 Economic Results); n=177 lots subset
+  used_in: [generator, simulator_baseline]
+  verified: false
+  notes: Small subset; Rojas says it may not generalize.
+- id: human_specificity
+  group: current_practice
+  description: Specificity of human high-risk call
+  value: 0.5979
+  unit: proportion
+  tag: Obs
+  source: rojas2022
+  location: p3
+  used_in: [generator, simulator_baseline]
+  verified: false
+- id: rider_sensitivity
+  group: detection
+  description: Pen-rider visual (DART) sensitivity for an individual BRD case
+  value: 0.645
+  low: 0.62
+  high: 0.67
+  unit: proportion
+  tag: Obs
+  source: adekunle2026epi
+  location: p5 (pooled; secondary - refs 25,51,52)
+  used_in: [generator_pulls, simulator]
+  verified: false
+- id: rider_specificity
+  group: detection
+  description: Pen-rider visual (DART) specificity
+  value: 0.665
+  low: 0.63
+  high: 0.70
+  unit: proportion
+  tag: Obs
+  source: adekunle2026epi
+  location: p5 (secondary)
+  used_in: [simulator]
+  verified: false
+
+# ---------------------------------------------------------------- intervention effects
+- id: meta_rr_morbidity
+  group: intervention
+  description: Relative risk of BRD morbidity with arrival metaphylaxis vs none
+  value: 0.50
+  low: 0.35
+  high: 0.75
+  unit: ratio
+  tag: Est
+  source: horton2023
+  location: abstract (7.3% vs 17.2% => RR 0.42); rojas2022 p11 Table 3 assumes 0.5
+  used_in: [generator, simulator]
+  verified: false
+  notes: Point 0.5 follows Rojas; range spans Horton RCT (0.42) and Baptiste 2017 'highly variable' effects.
+- id: meta_rr_mortality
+  group: intervention
+  description: Relative risk of mortality with metaphylaxis vs pull-and-treat (medium risk)
+  value: 0.44
+  low: 0.30
+  high: 0.80
+  unit: ratio
+  tag: Est
+  source: horton2023
+  location: abstract (1.1% vs 2.5%)
+  used_in: [simulator]
+  verified: false
+- id: meta_doses_per_head
+  group: intervention
+  description: Antimicrobial doses per animal enrolled - metaphylaxis program
+  value: 1.1
+  unit: doses/head
+  tag: Obs
+  source: horton2023
+  location: abstract
+  used_in: [simulator_amu]
+  verified: false
+- id: pt_doses_per_head
+  group: intervention
+  description: Antimicrobial doses per animal enrolled - pull-and-treat program
+  value: 0.2
+  unit: doses/head
+  tag: Obs
+  source: horton2023
+  location: abstract
+  used_in: [simulator_amu]
+  verified: false
+- id: arrival_vaccine_effect
+  group: intervention
+  description: Effect of vaccination at/near arrival on BRD diagnosis (not credited)
+  value: 1.0
+  unit: ratio
+  tag: Obs
+  source: oconnor2019vax
+  location: abstract ('little compelling evidence')
+  used_in: [risk_model]
+  verified: false
+  notes: Deliberately set to no effect; pre-arrival vaccination handled separately.
+
+# ---------------------------------------------------------------- risk-factor effects (log-odds of lot BRD risk)
+- id: or_preconditioned
+  group: risk_factor
+  description: Odds ratio of BRD for preconditioned (VAC45-type) vs not
+  value: 0.54
+  low: 0.32
+  high: 0.93
+  unit: odds_ratio
+  tag: Obs
+  source: mijar2023
+  location: Table 2 (source PC vs AD, 95% CI 0.32-0.93)
+  used_in: [generator, risk_model]
+  verified: false
+- id: or_sale_barn
+  group: risk_factor
+  description: Odds ratio for sale-barn (auction) vs ranch-direct, beyond preconditioning
+  value: 1.6
+  low: 1.2
+  high: 2.2
+  unit: odds_ratio
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Chosen so channel x preconditioning combined ~2.8-3x, matching Mijar 2023 (AD 2.76x PC) and Horton 2025 survey (market channel = top factor).
+- id: or_per_extra_source
+  group: risk_factor
+  description: Odds ratio per additional source (consignor) commingled in the lot, capped at 10
+  value: 1.06
+  unit: odds_ratio
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Direction from adekunle2026rf (commingling among most-studied risk factors); magnitude assumed.
+- id: or_long_haul
+  group: risk_factor
+  description: Odds ratio when haul >= 6 h
+  value: 1.4
+  unit: odds_ratio
+  tag: Assume
+  source: adekunle2026rf
+  location: p17 Table A1 (threshold only)
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Threshold Obs (>=6 h); magnitude Assume.
+- id: long_haul_hours
+  group: risk_factor
+  description: Haul duration threshold for high-risk state
+  value: 6
+  unit: hours
+  tag: Obs
+  source: adekunle2026rf
+  location: p17 Table A1
+  used_in: [generator, risk_model]
+  verified: false
+- id: commingling_days
+  group: risk_factor
+  description: Commingling < this many days before penning = high-risk state
+  value: 12
+  unit: days
+  tag: Obs
+  source: adekunle2026rf
+  location: p17 Table A1
+  used_in: [schema]
+  verified: false
+- id: logodds_per_100lb_lighter
+  group: risk_factor
+  description: Log-odds increase per 100 lb lighter arrival weight (centred at 700 lb)
+  value: 0.45
+  unit: log_odds
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Direction Obs (rojas2022 predictor; babcock2010 accuracy varies 17-91% by weight). Magnitude assumed.
+- id: logodds_shrink_per_pct
+  group: risk_factor
+  description: Log-odds increase per percentage point of transport shrink above 4%
+  value: 0.06
+  unit: log_odds
+  tag: Assume
+  source: horton2025
+  location: "full text (cites Cernicchiaro 2012b: shrink associated with BRD) - secondary"
+  used_in: [generator, risk_model]
+  verified: false
+- id: or_pre_arrival_vax_morbidity
+  group: risk_factor
+  description: Odds ratio of BRD morbidity if vaccinated pre-arrival (separate from preconditioning)
+  value: 0.80
+  unit: odds_ratio
+  tag: Assume
+  source: werid2026
+  location: abstract (mortality csHR 0.646; morbidity effect assumed weaker)
+  used_in: [generator, risk_model]
+  verified: false
+- id: hr_pre_arrival_vax_mortality
+  group: risk_factor
+  description: Cause-specific hazard ratio, BRD mortality, pre-entry vaccination (Australia)
+  value: 0.646
+  low: 0.503
+  high: 0.829
+  unit: hazard_ratio
+  tag: Obs
+  source: werid2026
+  location: abstract
+  used_in: [generator_mortality]
+  verified: false
+- id: logodds_sex_heifer
+  group: risk_factor
+  description: Log-odds shift for heifer lots vs steers
+  value: 0.10
+  unit: log_odds
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Sex is a Rojas predictor; direction/magnitude assumed.
+- id: logodds_sex_mixed
+  group: risk_factor
+  description: Log-odds shift for mixed-sex lots vs steers
+  value: 0.25
+  unit: log_odds
+  tag: Assume
+  source: weber2024
+  location: p2 intro ('mixed gender groups ... higher risk') - direction only
+  used_in: [generator, risk_model]
+  verified: false
+- id: logodds_season
+  group: risk_factor
+  description: Log-odds by arrival season [winter Dec-Feb, spring Mar-May, summer Jun-Aug]; fall is calibrated separately
+  value: [0.10, -0.25, 0.0]
+  unit: log_odds
+  tag: Assume
+  source: adekunle2026rf
+  location: "p17 Table A1 (season: 'induction season, particularly during fall'); Rojas uses arrival quarter as a predictor"
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Meteorological seasons so the fall effect lines up with Cernicchiaro's Sep-Nov cohorts.
+- id: logodds_fall
+  group: risk_factor
+  description: Log-odds shift for fall (Sep-Nov) arrivals
+  value: null
+  unit: log_odds
+  tag: Calibrated
+  source: cernicchiaro2011
+  location: params/calibrated.yaml (fit to target_fall_incidence)
+  used_in: [generator, risk_model]
+  verified: false
+- id: logodds_temp_swing
+  group: risk_factor
+  description: Log-odds increase when week-1 daily temperature range averages > 30 F
+  value: 0.25
+  unit: log_odds
+  tag: Assume
+  source: wisnieski2021
+  location: abstract (temperature range in first week associated) - magnitude assumed
+  used_in: [generator, risk_model]
+  verified: false
+- id: logodds_low_bunk
+  group: risk_factor
+  description: Log-odds increase when bunk space < 23 cm/head
+  value: 0.15
+  unit: log_odds
+  tag: Assume
+  source: rojas2022
+  location: p8 Table 2 (bunk space/head is a predictor) - magnitude assumed
+  used_in: [generator, risk_model]
+  verified: false
+- id: logodds_mexico_import
+  group: risk_factor
+  description: Log-odds shift for Mexico-origin feeder lots
+  value: 0.20
+  unit: log_odds
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator, risk_model]
+  verified: false
+  notes: HYPOTHESIS ONLY - no BRD-risk source found. Long haul + inspection handling. Remove or source before final.
+- id: precon_effect_fraction
+  group: risk_factor
+  description: Share of the full preconditioning odds-ratio effect credited by program tier
+  value: {none: 0.0, VAC24: 0.4, VAC34: 0.75, VAC45: 1.0}
+  unit: fraction
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Mijar 2023 effect treated as VAC45-equivalent (45-day weaned, vaccinated). Partial programs credited less.
+- id: human_call_noise_sd
+  group: current_practice
+  description: SD of noise in the buyer's perception of lot risk (log-odds scale)
+  value: null
+  unit: log_odds
+  tag: Calibrated
+  source: team
+  location: params/calibrated.yaml (fit to human_sensitivity / human_specificity)
+  used_in: [generator]
+  verified: false
+- id: human_call_threshold
+  group: current_practice
+  description: Perceived log-odds above which the buyer calls a lot high-risk
+  value: null
+  unit: log_odds
+  tag: Calibrated
+  source: team
+  location: params/calibrated.yaml
+  used_in: [generator]
+  verified: false
+- id: lot_intercept
+  group: risk_factor
+  description: Baseline log-odds of an animal becoming a BRD case (ranch-direct, 700 lb steer, Q2, no meta)
+  value: null
+  unit: log_odds
+  tag: Calibrated
+  source: team
+  location: scripts/calibrate.py output
+  used_in: [generator]
+  verified: false
+- id: lot_random_sd
+  group: risk_factor
+  description: SD of lot-level random effect on log-odds (unobserved heterogeneity)
+  value: null
+  unit: log_odds
+  tag: Calibrated
+  source: team
+  location: scripts/calibrate.py output
+  used_in: [generator]
+  verified: false
+
+# ---------------------------------------------------------------- disease timing & outcomes
+- id: onset_mean_day
+  group: timing
+  description: Mean day of first BRD treatment (high-risk calves)
+  value: 16
+  unit: days on feed
+  tag: Obs
+  source: wottlin2021
+  location: abstract
+  used_in: [generator_daily]
+  verified: false
+- id: onset_gamma_shape
+  group: timing
+  description: Gamma shape for onset day distribution (mean fixed by onset_mean_day)
+  value: 2.5
+  unit: ""
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator_daily]
+  verified: false
+- id: case_fatality
+  group: outcome
+  description: BRD deaths per BRD case (45 d)
+  value: 0.145
+  low: 0.10
+  high: 0.20
+  unit: proportion
+  tag: Est
+  source: horton2023
+  location: "abstract (PT: 2.5% mortality / 17.2% morbidity = 0.145; META 1.1/7.3 = 0.15)"
+  used_in: [generator, simulator]
+  verified: false
+  notes: Total mortality / BRD morbidity - approximation.
+- id: death_lag_mean_days
+  group: timing
+  description: Mean days from onset to death
+  value: 12
+  unit: days
+  tag: Assume
+  source: werid2026
+  location: abstract (BRD death hazard peaked at 35.1 DOF) - lag assumed
+  used_in: [generator_daily]
+  verified: false
+- id: sick_feeding_reduction
+  group: detection
+  description: Reduction in feeding time of BRD-sick animals around peak signs
+  value: 0.35
+  unit: proportion
+  tag: Obs
+  source: toaff2016
+  location: abstract
+  used_in: [generator_daily_feed]
+  verified: false
+- id: feed_stress_dip_logodds
+  group: detection
+  description: Day 2-5 feed delivery dip per unit of lot latent risk (logit scale)
+  value: 0.025
+  unit: fraction of intake per logit unit
+  tag: Assume
+  source: heinen2022
+  location: abstract (d2->d3 feed change most important predictor) - mechanism assumed
+  used_in: [generator_daily_feed]
+  verified: false
+- id: severe_carcass_penalty_kg
+  group: outcome
+  description: Carcass weight lighter for cattle treated >=3 times for BRD
+  value: 39.6
+  unit: kg
+  tag: Obs
+  source: blakebrough2020
+  location: abstract
+  used_in: [simulator]
+  verified: false
+
+# ---------------------------------------------------------------- economics
+- id: feeder_price_cwt_700_899
+  group: economics
+  description: Feeder cattle price, 700-899 lb steers (CME index basis), late Oct 2026
+  value: 348.0
+  low: 310.0
+  high: 360.0
+  unit: USD/cwt
+  tag: Obs
+  source: beefmag2026
+  location: article (Oct front-month settle $348.325) - confirm on CME
+  used_in: [simulator]
+  verified: false
+- id: light_calf_premium
+  group: economics
+  description: Per-cwt premium of 450-600 lb calves over the 700-899 lb index
+  value: 0.12
+  unit: proportion
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator]
+  verified: false
+  notes: Replace with USDA AMS MARS report (e.g. 1280 Oklahoma National Stockyards) weight-class prices.
+- id: cost_treatment_old
+  group: economics
+  description: Cost of one BRD treatment / metaphylaxis per head (2013 NAHMS basis)
+  value: 23.60
+  unit: USD/head
+  tag: Obs
+  source: rojas2022
+  location: p11 Table 3
+  used_in: [simulator_old_assumptions]
+  verified: false
+- id: cost_morbid_animal_old
+  group: economics
+  description: Lost value of a morbid vs healthy animal (Ranch-to-Rail basis)
+  value: 151.18
+  unit: USD/head
+  tag: Obs
+  source: rojas2022
+  location: p11 Table 3
+  used_in: [simulator_old_assumptions]
+  verified: false
+- id: cost_metaphylaxis_2026
+  group: economics
+  description: Metaphylaxis drug + administration cost per head, 2026
+  value: 30.0
+  low: 15.0
+  high: 45.0
+  unit: USD/head
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator]
+  verified: false
+  notes: NEEDS A QUOTE. Placeholder bracketing the 2013 $23.60 with inflation and drug class spread.
+- id: cost_treatment_case_2026
+  group: economics
+  description: Cost of treating one clinical case (drug + labor + chute), 2026
+  value: 35.0
+  low: 20.0
+  high: 60.0
+  unit: USD/case
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator]
+  verified: false
+- id: performance_loss_per_case
+  group: economics
+  description: Lost performance/carcass value per treated survivor (2026 prices)
+  value: 180.0
+  low: 100.0
+  high: 300.0
+  unit: USD/case
+  tag: Est
+  source: rojas2022
+  location: p11 Table 3 ($151.18 old basis) scaled toward 2026 prices - show arithmetic in brief
+  used_in: [simulator]
+  verified: false
+- id: rider_wage
+  group: economics
+  description: Loaded pen-rider labor cost
+  value: 25.0
+  unit: USD/hour
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator, optimizer]
+  verified: false
+  notes: Replace with BLS/USDA farm labor survey figure.
+- id: old_price_550lb_purchase
+  group: economics
+  description: 550-lb calf purchase price used in Weber 2024 simulation
+  value: 1.7397
+  unit: USD/lb
+  tag: Obs
+  source: weber2024
+  location: p2 (fixed variables table)
+  used_in: [brief_comparison]
+  verified: false
+
+# ---------------------------------------------------------------- stewardship context
+- id: fda_mia_sales_change_2024
+  group: context
+  description: Change in medically important antimicrobial sales for food animals, 2023->2024
+  value: 0.16
+  unit: proportion
+  tag: Obs
+  source: fda2024
+  location: report summary (confirm in FDA report, not news)
+  used_in: [brief]
+  verified: false
+- id: fda_cattle_share_2024
+  group: context
+  description: Cattle share of medically important antimicrobial sales, 2024
+  value: 0.41
+  unit: proportion
+  tag: Obs
+  source: fda2024
+  location: report (confirm)
+  used_in: [brief]
+  verified: false
+- id: nahms_group_injectable_pct
+  group: context
+  description: Feedlots treating arriving cattle as a group with injectable antimicrobials (all / large / small)
+  value: [0.148, 0.393, 0.128]
+  unit: proportion
+  tag: Obs
+  source: nahms2017
+  location: p4
+  used_in: [brief]
+  verified: false
+- id: steer_death_loss_trend
+  group: context
+  description: Kansas steer death loss, 1992 -> 2017
+  value: [0.0070, 0.0174]
+  unit: proportion
+  tag: Obs
+  source: deathloss2023
+  location: Introduction
+  used_in: [brief, generator_validation]
+  verified: false
+
+# ---------------------------------------------------------------- sensors (monitoring planner)
+- id: sensehub_first_tx_dof
+  group: sensors
+  description: Days on feed at first BRD treatment, pen rider vs SenseHub
+  value: [20.0, 15.9]
+  unit: days
+  tag: Obs
+  source: sensehub_trial
+  location: product page closeout table (manufacturer data on file)
+  used_in: [monitoring_planner]
+  verified: false
+- id: sensehub_fallout
+  group: sensors
+  description: Overall fallout (mortality + chronic), pen rider vs SenseHub
+  value: [0.151, 0.111]
+  unit: proportion
+  tag: Obs
+  source: sensehub_trial
+  location: product page closeout table (manufacturer data on file)
+  used_in: [monitoring_planner]
+  verified: false
+- id: sensehub_pens_entered
+  group: sensors
+  description: Pens entered per day to monitor health, pen rider vs SenseHub
+  value: [18, 5.3]
+  unit: pens/day
+  tag: Obs
+  source: sensehub_labor
+  location: article
+  used_in: [monitoring_planner, optimizer]
+  verified: false
+- id: sensehub_cost_per_head
+  group: sensors
+  description: Approximate tag cost per head (reusable; min order 300)
+  value: 15.0
+  low: 10.0
+  high: 25.0
+  unit: USD/head
+  tag: Obs
+  source: sensehub_price
+  location: article ('hovers around $15 per head' - estimate)
+  used_in: [monitoring_planner]
+  verified: false
+- id: sensehub_alert_sensitivity
+  group: sensors
+  description: Share of BRD cases that get a SenseHub alert 1-4 days before the pull (demo data only)
+  value: 0.85
+  low: 0.6
+  high: 0.95
+  unit: proportion
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [demo_data]
+  verified: false
+  notes: "Only used to create the demo alert history. With real uploads, PenPoint measures each yard's own hit rate and lead time from alerts vs treatments (Herd Status > Future risk). Trials report earlier first treatment (16 vs 20 days on feed) but no published sensitivity."
+- id: sensehub_false_alert_rate
+  group: sensors
+  description: Alerts per head per day that are not followed by a BRD pull (demo data only)
+  value: 0.0025
+  low: 0.001
+  high: 0.01
+  unit: alerts/head/day
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [demo_data]
+  verified: false
+  notes: "Alerts flag outliers, not BRD specifically (lameness, bloat also trigger). Real rate is learned from uploads."
+- id: weather_swing_threshold_f
+  group: environment
+  description: Daily temperature swing treated as a weather stress day
+  value: 30
+  unit: deg F
+  tag: Est
+  source: cernicchiaro2011
+  location: same threshold as logodds_temp_swing (week-1 average range > 30 F)
+  used_in: [weather_flags]
+  verified: false
+  notes: "Cold-and-windy (min < 25 F, wind > 20 mph) and cold-and-wet (> 0.25 in, max < 45 F) flags are team assumptions informed by Cernicchiaro 2012 and Wisnieski 2021; they are shown as signals, not added to the risk equation."
+- id: rfid_feeding_breakeven
+  group: sensors
+  description: Independent check - automated feeding system cost-effective only below this cost per steer
+  value: 4.06
+  unit: CAD/steer
+  tag: Obs
+  source: wolfger2014cost
+  location: abstract (or if true incidence > 47%)
+  used_in: [monitoring_planner]
+  verified: false
+
+# ---------------------------------------------------------------- host-paper constructs (Adekunle et al. 2026; Adekunle & Kaniyamattam 2026)
+- id: target_fall_incidence
+  group: calibration_target
+  description: 45-day BRD incidence (cases / head) in fall-placed (Sep-Nov) feedlot cattle
+  value: 0.0865
+  unit: proportion
+  tag: Est
+  source: cernicchiaro2011
+  location: "abstract (24,947 initial BRD cases / 288,388 cattle, 1,904 cohorts, 9 US feedlots, 2005-2007)"
+  used_in: [generator_validation]
+  verified: false
+  notes: Second, independent calibration target. Same broader KSU research network as Rojas, different feedlots and years.
+- id: stressor_light_weight_lb
+  group: risk_factor
+  description: Arrival weight below which Table A1 'light induction weight' high-risk state applies
+  value: 600
+  unit: lb
+  tag: Assume
+  source: adekunle2026rf
+  location: p17 Table A1 (weight - threshold assumed)
+  used_in: [risk_model, dashboard_checklist]
+  verified: false
+- id: stressor_commingling_sources
+  group: risk_factor
+  description: Number of sources at or above which a lot is treated as commingled (proxy for Table A1 'mixing <12 days before induction')
+  value: 3
+  unit: sources
+  tag: Assume
+  source: adekunle2026rf
+  location: p17 Table A1 (commingling)
+  used_in: [risk_model, dashboard_checklist]
+  verified: false
+- id: stressor_synergy_logodds
+  group: risk_factor
+  description: Extra log-odds when 3 or more acute stressors coincide (long haul, commingling, freshly weaned, light weight)
+  value: 0.25
+  unit: log_odds
+  tag: Assume
+  source: adekunle2026rf
+  location: "p13 section 4.3.4 ('BRD risk threshold': concurrent sub-threshold stressors collectively exceed the threshold)"
+  used_in: [generator, risk_model]
+  verified: false
+  notes: Concept from the host scoping review; magnitude assumed.
+- id: yard_hidden_effect
+  group: data_environment
+  description: Unmeasured yard-level log-odds shift built into the synthetic world (the model must learn it from history)
+  value: {A: 0.15, B: 0.0, C: -0.10, D: 0.20}
+  unit: log_odds
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [generator]
+  verified: false
+  notes: Represents management differences no field captures. Lets the demo show the model adapting to each yard.
+
+# SEIR-Q within-pen model (structure: Adekunle & Kaniyamattam 2026, Eqs 2-6). Rates are assumptions.
+- id: seirq_latent_days
+  group: seirq
+  description: Mean latent period E->I (1/sigma)
+  value: 3
+  unit: days
+  tag: Assume
+  source: adekunle2026epi
+  location: "p9 Eqs 2-6 (structure only)"
+  used_in: [pen_dynamics]
+  verified: false
+- id: seirq_infectious_days
+  group: seirq
+  description: Mean infectious period untreated (1/gamma)
+  value: 7
+  unit: days
+  tag: Assume
+  source: adekunle2026epi
+  location: "p9 Eqs 2-6 (structure only)"
+  used_in: [pen_dynamics]
+  verified: false
+- id: seirq_isolation_effect
+  group: seirq
+  description: Quarantine/isolation effectiveness eps_Q when sick cattle are moved to a hospital pen
+  value: 0.6
+  low: 0.3
+  high: 0.8
+  unit: proportion
+  tag: Assume
+  source: adekunle2026epi
+  location: "p9 Eq 6 (eps_Q) - value assumed"
+  used_in: [pen_dynamics, optimizer]
+  verified: false
+- id: seirq_treatment_rate
+  group: seirq
+  description: Treatment efficiency delta_M (extra removal rate from I once treated)
+  value: 0.25
+  unit: per day
+  tag: Assume
+  source: adekunle2026epi
+  location: "p9 Eq 4 (delta_M) - value assumed"
+  used_in: [pen_dynamics]
+  verified: false
+- id: transmission_share
+  group: seirq
+  description: Share of BRD cases attributable to within-pen transmission (rest triggered by arrival stress)
+  value: 0.35
+  low: 0.15
+  high: 0.5
+  unit: proportion
+  tag: Assume
+  source: adekunle2026epi
+  location: "p3-4 (stress-driven pathogenesis plus contagious spread) - share assumed"
+  used_in: [optimizer]
+  verified: false
+  notes: Used to price hospital-pen overflow - sick cattle left in the home pen keep transmitting.
+
+# ---------------------------------------------------------------- options simulator / feasibility
+- id: feed_signal_noise_sd
+  group: detection
+  description: SD of the observed day 2-5 relative feed-delivery dip (measurement + day-to-day noise)
+  value: 0.015
+  unit: fraction of expected intake
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [risk_model]
+  verified: false
+- id: yard_offset_shrinkage_cases
+  group: risk_model
+  description: Pseudo-count (cases) shrinking each yard's learned offset toward zero
+  value: 50
+  unit: cases
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [risk_model]
+  verified: false
+- id: doses_per_case
+  group: intervention
+  description: Antimicrobial doses per treated BRD case (first treatment + retreats)
+  value: 1.16
+  unit: doses/case
+  tag: Est
+  source: horton2023
+  location: "abstract (pull-and-treat: 0.2 doses/head / 17.2% morbidity)"
+  used_in: [simulator_amu]
+  verified: false
+- id: decision_day
+  group: intervention
+  description: Day on feed at which the 'wait, then decide' option makes its call
+  value: 5
+  unit: days on feed
+  tag: Assume
+  source: heinen2022
+  location: "abstract (day 2->3 feed change most predictive); babcock2010 (accuracy improves by day 8)"
+  used_in: [simulator, risk_model]
+  verified: false
+- id: late_meta_effect_fraction
+  group: intervention
+  description: Fraction of the arrival metaphylaxis effect retained when given at the decision day (applied to cases not yet started)
+  value: 0.8
+  unit: fraction
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator]
+  verified: false
+- id: mortality_cap_margin
+  group: policy
+  description: Safety margin on the "no more deaths than current practice" rule. The tool must plan for at least this fraction FEWER expected deaths than current practice, so model error cannot push real deaths above current practice.
+  value: 0.05
+  low: 0.0
+  high: 0.10
+  unit: fraction
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [allocator, evaluation]
+  verified: false
+  notes: "Team rule: the tool may not trade cattle deaths for money. Set by stress test (scripts/evaluate_policies.py): tested 3%, 5%, 7% over 4 scenarios x 3 seeds. 3% let arrival-only decisions exceed current deaths in one run (+0.008 per 100 head); 5% kept every run at or below current practice (worst -0.005 per 100 head)."
+- id: detection_delay_days
+  group: detection
+  description: Mean days a BRD case goes untreated before being pulled - standard riding / extra riding
+  value: [2.0, 1.2]
+  unit: days
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator_welfare]
+  verified: false
+  notes: Welfare metric (untreated sick-days). Sensor option later uses SenseHub's 4.1-day-earlier first treatment.
+- id: early_detection_mortality_rr
+  group: detection
+  description: Relative risk of BRD death with earlier detection (used for extra riding at a reduced share)
+  value: 0.66
+  unit: ratio
+  tag: Obs
+  source: wolfger2014cost
+  location: "abstract (early detection RR 0.66 for mortality, 'based on previously published estimates')"
+  used_in: [simulator]
+  verified: false
+- id: extra_riding_share_of_early_effect
+  group: detection
+  description: Share of the early-detection mortality benefit achieved by one extra rider pass per day
+  value: 0.4
+  unit: fraction
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator]
+  verified: false
+- id: rider_minutes_per_pen_pass
+  group: operations
+  description: Rider minutes to walk/ride one pen once
+  value: 15
+  unit: minutes
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator, optimizer]
+  verified: false
+- id: hospital_stay_days
+  group: operations
+  description: Days a treated animal occupies the hospital pen
+  value: 4
+  unit: days
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator, optimizer]
+  verified: false
+- id: chute_minutes_meta_per_head
+  group: operations
+  description: Extra chute minutes per head to administer metaphylaxis during processing
+  value: 0.5
+  unit: minutes/head
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [optimizer]
+  verified: false
+- id: feed_yardage_cost_per_day
+  group: economics
+  description: Feed + yardage cost per head per day (sunk if the animal dies)
+  value: 3.5
+  low: 2.5
+  high: 4.5
+  unit: USD/head/day
+  tag: Assume
+  source: team
+  location: ""
+  used_in: [simulator]
+  verified: false
+  notes: Replace with K-State Focus on Feedlots cost of gain x ADG.
+- id: mean_death_day
+  group: timing
+  description: Mean day on feed of BRD deaths within 45 days (for sunk feed cost)
+  value: 28
+  unit: days on feed
+  tag: Est
+  source: team
+  location: "onset_mean_day (16) + death_lag_mean_days (12)"
+  used_in: [simulator]
+  verified: false
+
+# ---------------------------------------------------------------- data-environment assumptions (generator)
+- id: missing_rates
+  group: data_environment
+  description: Probability a field is missing, by market channel
+  value:
+    sale_barn:     {haul_hours: 0.40, n_sources: 0.30, preconditioning: 0.70, origin_state: 0.25, pay_weight_lb: 0.15, pre_arrival_vaccinated: 0.70}
+    ranch_direct:  {haul_hours: 0.10, n_sources: 0.05, preconditioning: 0.15, origin_state: 0.05, pay_weight_lb: 0.05, pre_arrival_vaccinated: 0.15}
+    backgrounder:  {haul_hours: 0.15, n_sources: 0.10, preconditioning: 0.25, origin_state: 0.10, pay_weight_lb: 0.05, pre_arrival_vaccinated: 0.25}
+    mexico_import: {haul_hours: 0.20, n_sources: 0.40, preconditioning: 0.50, origin_state: 0.00, pay_weight_lb: 0.10, pre_arrival_vaccinated: 0.50}
+  unit: proportion
+  tag: Assume
+  source: rojas2022
+  location: p6 ('no information on prior management') - rates assumed
+  used_in: [generator]
+  verified: false
+  notes: Missingness deliberately concentrated in sale-barn lots (not missing at random).

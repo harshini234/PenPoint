@@ -1,0 +1,49 @@
+[server]
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1D5640"
+backgroundColor = "#EDF1EE"
+secondaryBackgroundColor = "#E3EAE5"
+textColor = "#13261F"
+borderColor = "#D6DFD9"
+dataframeBorderColor = "#E1E8E3"
+dataframeHeaderBackgroundColor = "#F3F6F4"
+linkColor = "#1D5640"
+font = "Instrument Sans, sans-serif"
+headingFont = "Bricolage Grotesque, sans-serif"
+headingFontWeights = [650, 620, 600, 600, 600, 600]
+baseRadius = "0.85rem"
+buttonRadius = "full"
+showWidgetBorder = true
+showSidebarBorder = false
+chartCategoricalColors = ["#1F7A52", "#3577D6", "#E5682F", "#9D55C4", "#B88A00"]
+
+[[theme.fontFaces]]
+family = "Instrument Sans"
+url = "app/static/fonts/instrument-sans.woff2"
+weight = "400 700"
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Instrument Sans"
+url = "app/static/fonts/instrument-sans-italic.woff2"
+weight = "400 700"
+style = "italic"
+
+[[theme.fontFaces]]
+family = "Bricolage Grotesque"
+url = "app/static/fonts/bricolage.woff2"
+weight = "200 800"
+style = "normal"
+
+[theme.sidebar]
+backgroundColor = "#0F3427"
+secondaryBackgroundColor = "#174634"
+textColor = "#E7EFE9"
+primaryColor = "#DCEB8A"
+borderColor = "#24543F"

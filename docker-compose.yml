@@ -1,0 +1,13 @@
+# Local PostgreSQL for PenPoint:  docker compose up -d
+# then:  export DATABASE_URL=postgresql://penpoint:penpoint@localhost:5432/penpoint
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: penpoint
+      POSTGRES_PASSWORD: penpoint
+      POSTGRES_DB: penpoint
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+volumes:
+  pgdata:

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+data/penpoint.db
+.streamlit/secrets.toml
+__pycache__/
+.venv/

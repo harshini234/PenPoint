@@ -1,0 +1,88 @@
+# Four FICTIONAL yards representing the operating differences the brief asks for.
+# All values here are team assumptions (tag: Assume) unless noted. Names are invented.
+# hospital_pen_head = hospital spaces free for new BRD cases; spare_rider_hours_per_day = rider time
+# available beyond routine checks (for extra passes). Both are the binding constraints in the feasibility step.
+# Locations are approximate regions only (used for haul distance and weather lookups).
+
+yards:
+  A:
+    name: "Yard A - Panhandle receiving yard"
+    region: "Texas Panhandle (near Hereford, TX)"
+    lat: 34.82
+    lon: -102.40
+    one_time_capacity_head: 40000
+    profile: "Light sale-barn calves, long hauls from the Southeast; highest risk mix"
+    channel_mix: {sale_barn: 0.70, ranch_direct: 0.10, backgrounder: 0.15, mexico_import: 0.05}
+    weight_mean_lb: 560
+    weight_sd_lb: 70
+    pen_area_m2_per_head: 14
+    bunk_cm_per_head: 22
+    riders: 6
+    rider_hours_per_day: 7
+    hospital_pen_head: 40
+    spare_rider_hours_per_day: 1.5
+    chute_hours_per_day: 6
+    current_policy_note: "Metaphylaxis on every lot the buyer calls high-risk"
+  B:
+    name: "Yard B - Panhandle mixed yard"
+    region: "Texas Panhandle (near Amarillo, TX)"
+    lat: 35.20
+    lon: -101.83
+    one_time_capacity_head: 30000
+    profile: "Mixed sale-barn and backgrounded cattle; receives Mexico-origin feeders via NM ports"
+    channel_mix: {sale_barn: 0.45, ranch_direct: 0.15, backgrounder: 0.25, mexico_import: 0.15}
+    weight_mean_lb: 640
+    weight_sd_lb: 90
+    pen_area_m2_per_head: 16
+    bunk_cm_per_head: 24
+    riders: 5
+    rider_hours_per_day: 7
+    hospital_pen_head: 35
+    spare_rider_hours_per_day: 1.0
+    chute_hours_per_day: 6
+    current_policy_note: "Metaphylaxis on every lot the buyer calls high-risk"
+  C:
+    name: "Yard C - SW Kansas yearling yard"
+    region: "Southwest Kansas (near Garden City, KS)"
+    lat: 37.97
+    lon: -100.87
+    one_time_capacity_head: 35000
+    profile: "Heavier yearlings, more ranch-direct and preconditioned cattle; lowest risk mix"
+    channel_mix: {sale_barn: 0.25, ranch_direct: 0.45, backgrounder: 0.30, mexico_import: 0.00}
+    weight_mean_lb: 760
+    weight_sd_lb: 80
+    pen_area_m2_per_head: 18
+    bunk_cm_per_head: 26
+    riders: 5
+    rider_hours_per_day: 7
+    hospital_pen_head: 30
+    spare_rider_hours_per_day: 1.0
+    chute_hours_per_day: 6
+    current_policy_note: "Metaphylaxis on every lot the buyer calls high-risk"
+  D:
+    name: "Yard D - W Kansas small yard"
+    region: "Western Kansas (near Scott City, KS)"
+    lat: 38.48
+    lon: -100.91
+    one_time_capacity_head: 12000
+    profile: "Small yard, mixed cattle, tight hospital-pen and labor capacity (binding constraint demo)"
+    channel_mix: {sale_barn: 0.50, ranch_direct: 0.25, backgrounder: 0.25, mexico_import: 0.00}
+    weight_mean_lb: 650
+    weight_sd_lb: 90
+    pen_area_m2_per_head: 15
+    bunk_cm_per_head: 21
+    riders: 2
+    rider_hours_per_day: 7
+    hospital_pen_head: 6
+    spare_rider_hours_per_day: 0.25
+    chute_hours_per_day: 4
+    current_policy_note: "Metaphylaxis on every lot the buyer calls high-risk"
+
+# Origin regions for haul distance. Sale-barn calves into the Panhandle often come from the Southeast.
+origins:
+  TX_local:     {lat: 33.5, lon: -101.9, states: [TX]}
+  OK_KS:        {lat: 36.5, lon: -97.5,  states: [OK, KS]}
+  Southeast:    {lat: 33.0, lon: -86.5,  states: [AL, GA, MS, TN, FL]}
+  Midsouth:     {lat: 35.0, lon: -92.0,  states: [AR, MO, LA]}
+  Mountain:     {lat: 41.0, lon: -106.0, states: [CO, WY, NM]}
+  Mexico_NM:    {lat: 31.8, lon: -106.6, states: [MX via Santa Teresa NM]}
